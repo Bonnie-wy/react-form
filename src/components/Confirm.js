@@ -19,7 +19,7 @@ const StyledTypography = styled(Typography)({
   margin: '0 auto'
 });
 
-export class FormUserDetails extends Component {
+export class Confirm extends Component {
   continue = e => {
     e.preventDefault();
     // PROCESS FORM //
@@ -76,4 +76,4 @@ export class FormUserDetails extends Component {
   }
 }
 
-export default FormUserDetails
+export default Confirm

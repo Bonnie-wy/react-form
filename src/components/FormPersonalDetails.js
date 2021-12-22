@@ -16,7 +16,7 @@ const StyledTypography = styled(Typography)({
   margin: '0 auto'
 });
 
-export class FormUserDetails extends Component {
+export class FormPersonalDetails extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -85,4 +85,4 @@ export class FormUserDetails extends Component {
   }
 }
 
-export default FormUserDetails
+export default FormPersonalDetails
