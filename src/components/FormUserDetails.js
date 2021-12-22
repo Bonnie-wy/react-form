@@ -16,11 +16,6 @@ const StyledTypography = styled(Typography)({
 });
 
 export class FormUserDetails extends Component {
-  continue = e => {
-    e.preventDefault();
-    this.props.nextStep();
-  }
-
   render() {
     const { values, handleChange } = this.props;
 
@@ -63,7 +58,7 @@ export class FormUserDetails extends Component {
         <br />
         <Button
           variant="contained"
-          onClick={this.continue}
+          onClick={this.props.nextStep}
         >
           Continue
         </Button>
