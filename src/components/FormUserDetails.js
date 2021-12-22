@@ -24,6 +24,7 @@ export class FormUserDetails extends Component {
   render() {
     const { values, handleChange } = this.props;
 
+    console.log(this.props.values)
     return (
       <ThemeProvider theme={createTheme()}>
         <Box sx={{ flexGrow: 1 }}>
@@ -38,7 +39,6 @@ export class FormUserDetails extends Component {
             </Toolbar>
           </AppBar>
         </Box>
-        {/* <AppBar title="Enter User Details" /> */}
         <TextField
           id="outlined-basic"
           label="First Name"
